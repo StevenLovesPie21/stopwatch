@@ -1,4 +1,8 @@
 /**
+ * This javascript file contains helper methods used in script.js
+ */
+
+/**
  * Allows time to be displayed in String and maintain clock format 
  * with leading 0s
  *

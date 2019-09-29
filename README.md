@@ -1,18 +1,7 @@
 Stopwatch Web Application
 ===============
 
-TODO list: 
- - Insert pictures step by step of the process
- - Describe each functional buttons
- - Describe all of the column items
- - other shit
- - APIs used
- - Organize this readme for a good documentation 
-
- <img src="images/start_page.jpg" />
- ![alt text](images/start_page.jpg)
- 
- ![start_page](https://user-images.githubusercontent.com/44922197/65829698-d599b600-e25c-11e9-8853-14da6c327a4c.JPG)
+![start_page](https://user-images.githubusercontent.com/44922197/65829698-d599b600-e25c-11e9-8853-14da6c327a4c.JPG)
 
 This is a stopwatch web application that records information - multiple trials, coordinate positon, and time zones - within a data table that can be accessed offline. 
 
@@ -37,6 +26,7 @@ Here is some information about each information that is logged into the browser.
 	- Ending Time Zone: Ending a trial will the record information about the current date, time, and time zone.
 
 There is also a Web Storage API utilized within this application. This allows data entered in the table to be remembered even after refreshing or reopening the browswer.
+
 
 Steps
 ----- 

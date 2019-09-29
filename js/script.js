@@ -1,5 +1,5 @@
-/* TODO
- * Check to see if the latitude and longitude are different when you change location
+/**
+ * Main javascript file
  */
 
 // Default format for the clock time displayed
@@ -14,7 +14,6 @@ const LATITUDE_CELL = 4;
 const LONGITUDE_CELL = 5;
 const STARTING_TIME_ZONE_CELL = 6;
 const ENDING_TIME_ZONE_CELL = 7;
-
 
 // Variables that represent total duration of time calculated
 let elapsedTime = {
@@ -54,10 +53,6 @@ let displayTime = {
     }
 }
 
-// Trying to make a 2d array of the information that is in the table
-// Or maybe i don't need it in a variable (that way we can save memory/space)
-var tableInfo = [[]];
-
 // Position variables for Geolocation API
 let longitude = null;
 let latitude = null;
@@ -71,12 +66,12 @@ let timerOn = false;
 // Used to identify the last row in the table or number of trials
 let trialNum = 1;
 
-
 /**
  * Basic logic of a stopwatch - consistently keeps track of time
  */
 function stopWatch(){
-    // Countinously adds a second
+
+    // Countinously adds a second, keeps track of time
     trialTime.seconds++;
     elapsedTime.seconds++;
 
@@ -100,11 +95,11 @@ function stopWatch(){
 
 /**
  * Functionality of the start/stop button
- * Used to begin time and stop it
+ * Used to begin and stop stopwatch
  */
 function startStop(){
 
-    // Starting the timer 
+    // Starting the timer by clicking the start button
     if( !timerOn ) {
 
         //Start the stopwatch (by calling the setInterval() function)
@@ -125,9 +120,10 @@ function startStop(){
 
     }
 
-    // Stopping the timer and trial time updates in table
+    // Stopping the timer and trial time updates in table by clicking stop button 
     else{
 
+        // Resets the button back to the "start" option and stops the clock
         window.clearInterval( interval );
         document.getElementById( 'startStopBtn' ).innerHTML = "Start";
         timerOn = false;
@@ -136,7 +132,7 @@ function startStop(){
         convertTimeForDisplay( trialTime, displayTime.trial );
 
         // Assign trial time cell in clock format
-        var table = document.getElementsByTagName('table')[0];
+        var table = document.getElementsByTagName( 'table' )[0];
         table.rows[trialNum].cells[TRIAL_TIME_CELL].innerHTML = displayTime.trial.formatInfo();
 
         // Puts the latitude and longitude in the cells
@@ -146,7 +142,7 @@ function startStop(){
         // Update the time zone the table
         table.rows[trialNum].cells[ENDING_TIME_ZONE_CELL].innerHTML = new Date();
 
-        // I think you call this method here because this is when all the information is filled
+        // Populates all information from the current trial into localStorage
         populateStorage( trialNum );
 
         /*
@@ -160,7 +156,7 @@ function startStop(){
 }
 
 /**
- * Function to reset the stopwatch and table
+ * Function to reset the stopwatch and table values/data
  */
 function reset(){
 
@@ -194,12 +190,8 @@ function addInfo() {
     // Allows to directly change the display clock
     var display = document.getElementById( 'display' ).innerHTML;
 
-    // Get Table info
+    // Get Table info and insets a new row at the bottom of the table
     var table = document.getElementsByTagName( 'table' )[0];
-
-    //if( localStorage.getItem( 'trialNum' ) ) {
-     //   trialNum = localStorage.getItem( 'trialNum' ) + 1;
-   // }
     var newRow = table.insertRow( trialNum );
 
     // Adding cells to the newly created row
@@ -211,9 +203,5 @@ function addInfo() {
     newRow.insertCell( LONGITUDE_CELL ).innerHTML = longitude;
     newRow.insertCell( STARTING_TIME_ZONE_CELL ).innerHTML = new Date();
     newRow.insertCell( ENDING_TIME_ZONE_CELL ).innerHTML = 0;
-
-    
-    // Increase the number of trialNum for the next row
-    //trialNum++;
     
 }

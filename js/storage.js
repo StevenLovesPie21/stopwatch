@@ -1,4 +1,7 @@
-// Web Storage API to maintain data collected from table even after reopening application
+/**
+ * Javascript file used for Web Storage API functions
+ * Web Storage API maintains data collected from table even after reopening application
+ */
 
 // Checks if there is at least one data that exists inside localStorage
 if( localStorage.getItem( 'trial1' ) ) {
@@ -25,6 +28,7 @@ if( localStorage.getItem( 'trial1' ) ) {
  * correct number of trials
  */
 function restoreTable( trialNum ) {
+
   // Get Table info
   var table = document.getElementsByTagName( 'table' )[0];
 
@@ -90,6 +94,7 @@ function populateStorage( trialNum ) {
   localStorage.setItem( endingTimeZoneStr, 
     table.rows[trialNum].cells[ENDING_TIME_ZONE_CELL].innerHTML );
 
+  // Time values are stored into localStorage
   localStorage.setItem( 'elapsedSeconds', elapsedTime.seconds );
   localStorage.setItem( 'trialNum', trialNum );
 
