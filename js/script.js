@@ -1,7 +1,10 @@
-/**
- * Main javascript file
+/*
+ * Filename: script.js
+ * Author: Steven Gov
+ * Date: 9/29/19
+ * Purpose: Main javascript file containing all core functions
  */
-
+ 
 // Default format for the clock time displayed
  const DEFAULT_TIME = "00 : 00 : 00";
 
@@ -154,13 +157,6 @@ function startStop(){
     }
 
 }
-
-/*
- * Filename: script.js
- * Author: Steven Gov
- * Date: 9/29/19
- * Purpose: Main javascript file containing all core functions
- */
 
 /**
  * Function to reset the stopwatch and table values/data
