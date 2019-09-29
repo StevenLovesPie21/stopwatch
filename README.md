@@ -12,7 +12,7 @@ TODO list:
  <img src="images/start_page.jpg" />
  ![alt text](images/start_page.jpg)
  
- ![start_page](images/start_page.jpg)
+ ![start_page](https://user-images.githubusercontent.com/44922197/65829698-d599b600-e25c-11e9-8853-14da6c327a4c.JPG)
 
 This is a stopwatch web application that records information - multiple trials, coordinate positon, and time zones - within a data table that can be accessed offline. 
 
