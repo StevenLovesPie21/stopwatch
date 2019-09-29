@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="js/script.js" type="text/javascript"> </script>
+    <script src="js/helper.js" type="text/javascript"> </script>
+
+</head>
+
+<body>
+
+    <h1> STOPWATCH </h1>  
+
+    <div class="container">
+
+        <div id="display"> 00 : 00 : 00 </div>
+
+        <div class="buttons">
+            <button id="startStopBtn" onclick="startStop()"> Start </button> 
+            <button id="resetBtn" onclick="reset()"> Reset </button>
+            <button id = "find-me" onclick="geoFindMe()">Show my location</button><br/>
+            <p id = "status"></p>
+            <a id = "map-link" target="_blank"></a>
+        </div>
+
+    </div>
+
+    <table style="width:100%">
+      <tr>
+        <th>Trial</th>
+        <th>Starting Elapsed Time</th>
+        <th>Total Elapsed Time</th>
+        <th>Trial time</th>
+        <th>Latitude</th>
+        <th>Longitude</th>
+        <th>Starting Time Zone</th>
+        <th>Ending Time Zone</th>
+      </tr>
+    </table>
+
+    <script src="js/storage.js" type="text/javascript"> </script>
+    
+</body>
+
+</html>
