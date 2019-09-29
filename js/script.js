@@ -157,6 +157,7 @@ function startStop(){
 
 /**
  * Function to reset the stopwatch and table values/data
+ * Assumtption: Reset button cleared everything and started application from stratch
  */
 function reset(){
 
@@ -201,6 +202,8 @@ function addInfo() {
     newRow.insertCell( TRIAL_TIME_CELL ).innerHTML = DEFAULT_TIME;   
     newRow.insertCell( LATITUDE_CELL ).innerHTML = latitude;
     newRow.insertCell( LONGITUDE_CELL ).innerHTML = longitude;
+
+    // Assumption: time zone displayed entire date, time, and time zone 
     newRow.insertCell( STARTING_TIME_ZONE_CELL ).innerHTML = new Date();
     newRow.insertCell( ENDING_TIME_ZONE_CELL ).innerHTML = 0;
     
