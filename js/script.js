@@ -155,6 +155,13 @@ function startStop(){
 
 }
 
+/*
+ * Filename: script.js
+ * Author: Steven Gov
+ * Date: 9/29/19
+ * Purpose: Main javascript file containing all core functions
+ */
+
 /**
  * Function to reset the stopwatch and table values/data
  * Assumtption: Reset button cleared everything and started application from stratch

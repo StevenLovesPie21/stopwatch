@@ -1,5 +1,8 @@
-/**
- * This javascript file contains helper methods used in script.js
+/*
+ * Filename: helper.js
+ * Author: Steven Gov
+ * Date: 9/29/19
+ * Purpose: This javascript file contains helper methods used in script.js
  */
 
 /**

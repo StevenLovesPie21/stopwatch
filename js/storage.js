@@ -1,6 +1,8 @@
-/**
- * Javascript file used for Web Storage API functions
- * Web Storage API maintains data collected from table even after reopening application
+ /*
+ * Filename: storage.js
+ * Author: Steven Gov
+ * Date: 9/29/19
+ * Purpose: Javascript file used for Web Storage API functions
  */
 
 // Checks if there is at least one data that exists inside localStorage
