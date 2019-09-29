@@ -16,6 +16,7 @@ You can run this stopwatch application locally. Simply download the code and ope
 How it works
 ------------
 Here is some information about each information that is logged into the browser.
+
 	- Trial: The amount of entries/trials that are logged into the timer. In other words, clicking the start button will begin a trial. Clicking the stop button will end the trial
 	- Starting Elapsed Time: This is the time that will be recorded when the next trial begins. 
 	- Total Elapsed Time: This cell in the table shows the current time displayed on the stopwatch. It updates as the stopwatch continues to run. The time will stop when the stopwatch is stopped.
