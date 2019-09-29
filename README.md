@@ -9,7 +9,8 @@ TODO list:
  - APIs used
  - Organize this readme for a good documentation 
 
- <img src="start_page.jpg" />
+ <img src="images/start_page.jpg" />
+ ![alt text](images/start_page.jpg)
 
 This is a stopwatch web application that records information - multiple trials, coordinate positon, and time zones - within a data table that can be accessed offline. 
 
